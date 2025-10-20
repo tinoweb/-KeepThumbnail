@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demo - Tema Dark Azul Marinho - KeepThumbnail</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body class="bg-gray-100 min-h-screen">
+    <div class="container mx-auto px-4 py-8">
+        <!-- Header Demo -->
+        <div class="bg-white rounded-lg shadow-md p-6 mb-8">
+            <div class="text-center">
+                <h1 class="text-4xl font-bold text-gray-800 mb-4">
+                    <i class="fas fa-palette text-blue-600"></i> 
+                    KeepThumbnail - Tema Dark Azul Marinho
+                </h1>
+                <p class="text-gray-600 text-lg">Demonstração do novo tema profissional aplicado</p>
+            </div>
+        </div>
+
+        <!-- Paleta de Cores -->
+        <div class="bg-white rounded-lg shadow-md p-6 mb-8">
+            <h2 class="text-2xl font-bold text-gray-800 mb-6">
+                <i class="fas fa-swatchbook text-blue-600"></i> Paleta de Cores
+            </h2>
+            
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mb-6">
+                <div class="text-center">
+                    <div class="w-full h-20 rounded-lg mb-2" style="background: var(--primary-bg);"></div>
+                    <p class="text-sm text-gray-600">Primary BG<br><code>#0f172a</code></p>
+                </div>
+                <div class="text-center">
+                    <div class="w-full h-20 rounded-lg mb-2" style="background: var(--secondary-bg);"></div>
+                    <p class="text-sm text-gray-600">Secondary BG<br><code>#1e293b</code></p>
+                </div>
+                <div class="text-center">
+                    <div class="w-full h-20 rounded-lg mb-2" style="background: var(--accent-primary);"></div>
+                    <p class="text-sm text-gray-600">Accent Primary<br><code>#0ea5e9</code></p>
+                </div>
+                <div class="text-center">
+                    <div class="w-full h-20 rounded-lg mb-2" style="background: var(--accent-light);"></div>
+                    <p class="text-sm text-gray-600">Accent Light<br><code>#38bdf8</code></p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Componentes Demo -->
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-8">
+            <!-- Botões -->
+            <div class="bg-white rounded-lg shadow-md p-6">
+                <h3 class="text-xl font-bold text-gray-800 mb-4">
+                    <i class="fas fa-mouse-pointer text-blue-600"></i> Botões
+                </h3>
+                
+                <div class="space-y-4">
+                    <div class="flex flex-wrap gap-2">
+                        <button class="bg-blue-600 text-white px-4 py-2 rounded-md hover:bg-blue-700 transition duration-200">
+                            <i class="fas fa-upload mr-2"></i> Upload
+                        </button>
+                        <button class="bg-green-600 text-white px-4 py-2 rounded-md hover:bg-green-700 transition duration-200">
+                            <i class="fas fa-check mr-2"></i> Sucesso
+                        </button>
+                        <button class="bg-red-600 text-white px-4 py-2 rounded-md hover:bg-red-700 transition duration-200">
+                            <i class="fas fa-trash mr-2"></i> Excluir
+                        </button>
+                        <button class="bg-yellow-600 text-white px-4 py-2 rounded-md hover:bg-yellow-700 transition duration-200">
+                            <i class="fas fa-edit mr-2"></i> Editar
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Forms -->
+            <div class="bg-white rounded-lg shadow-md p-6">
+                <h3 class="text-xl font-bold text-gray-800 mb-4">
+                    <i class="fas fa-edit text-blue-600"></i> Formulários
+                </h3>
+                
+                <div class="space-y-4">
+                    <input type="text" placeholder="Campo de texto" 
+                           class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500">
+                    <textarea placeholder="Área de texto" rows="3"
+                              class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"></textarea>
+                    <select class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500">
+                        <option>Selecione uma opção</option>
+                        <option>Opção 1</option>
+                        <option>Opção 2</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+
+        <!-- Cards Demo -->
+        <div class="bg-white rounded-lg shadow-md p-6 mb-8">
+            <h3 class="text-xl font-bold text-gray-800 mb-4">
+                <i class="fas fa-th-large text-blue-600"></i> Cards de Thumbnail
+            </h3>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div class="thumbnail-card">
+                    <div class="relative">
+                        <div class="w-full h-48 bg-gradient-to-br from-blue-500 to-purple-600 rounded-t-lg flex items-center justify-center">
+                            <i class="fas fa-image text-white text-4xl"></i>
+                        </div>
+                        <div class="absolute top-2 right-2 flex gap-2">
+                            <button class="action-btn bg-green-600 hover:bg-green-700">
+                                <i class="fas fa-download text-sm"></i>
+                            </button>
+                            <button class="action-btn bg-blue-600 hover:bg-blue-700">
+                                <i class="fas fa-share text-sm"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="p-4">
+                        <h4 class="font-semibold text-gray-800 mb-2">Thumbnail Exemplo</h4>
+                        <p class="text-gray-600 text-sm mb-2">Descrição do thumbnail com tema dark aplicado</p>
+                        <div class="flex gap-1">
+                            <span class="tag">youtube</span>
+                            <span class="tag">gaming</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="thumbnail-card">
+                    <div class="relative">
+                        <div class="w-full h-48 bg-gradient-to-br from-green-500 to-teal-600 rounded-t-lg flex items-center justify-center">
+                            <i class="fas fa-video text-white text-4xl"></i>
+                        </div>
+                        <div class="absolute top-2 right-2 flex gap-2">
+                            <button class="action-btn bg-green-600 hover:bg-green-700">
+                                <i class="fas fa-download text-sm"></i>
+                            </button>
+                            <button class="action-btn bg-blue-600 hover:bg-blue-700">
+                                <i class="fas fa-share text-sm"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="p-4">
+                        <h4 class="font-semibold text-gray-800 mb-2">Video Thumbnail</h4>
+                        <p class="text-gray-600 text-sm mb-2">Exemplo de thumbnail de vídeo</p>
+                        <div class="flex gap-1">
+                            <span class="tag">tutorial</span>
+                            <span class="tag">tech</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="thumbnail-card">
+                    <div class="relative">
+                        <div class="w-full h-48 bg-gradient-to-br from-purple-500 to-pink-600 rounded-t-lg flex items-center justify-center">
+                            <i class="fas fa-palette text-white text-4xl"></i>
+                        </div>
+                        <div class="absolute top-2 right-2 flex gap-2">
+                            <button class="action-btn bg-green-600 hover:bg-green-700">
+                                <i class="fas fa-download text-sm"></i>
+                            </button>
+                            <button class="action-btn bg-blue-600 hover:bg-blue-700">
+                                <i class="fas fa-share text-sm"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="p-4">
+                        <h4 class="font-semibold text-gray-800 mb-2">Design Thumbnail</h4>
+                        <p class="text-gray-600 text-sm mb-2">Thumbnail com design moderno</p>
+                        <div class="flex gap-1">
+                            <span class="tag">design</span>
+                            <span class="tag">ui</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Badges e Notificações -->
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-8">
+            <div class="bg-white rounded-lg shadow-md p-6">
+                <h3 class="text-xl font-bold text-gray-800 mb-4">
+                    <i class="fas fa-tags text-blue-600"></i> Badges
+                </h3>
+                
+                <div class="space-y-4">
+                    <div class="flex flex-wrap gap-2">
+                        <span class="badge primary">Primary</span>
+                        <span class="badge success">Success</span>
+                        <span class="badge warning">Warning</span>
+                        <span class="badge danger">Danger</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-white rounded-lg shadow-md p-6">
+                <h3 class="text-xl font-bold text-gray-800 mb-4">
+                    <i class="fas fa-bell text-blue-600"></i> Notificações
+                </h3>
+                
+                <div class="space-y-3">
+                    <div class="notification success" style="position: static; margin: 0;">
+                        <i class="fas fa-check mr-2"></i> Upload realizado com sucesso!
+                    </div>
+                    <div class="notification error" style="position: static; margin: 0;">
+                        <i class="fas fa-times mr-2"></i> Erro no processamento
+                    </div>
+                    <div class="notification info" style="position: static; margin: 0;">
+                        <i class="fas fa-info mr-2"></i> Informação importante
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Efeitos Especiais -->
+        <div class="bg-white rounded-lg shadow-md p-6 mb-8">
+            <h3 class="text-xl font-bold text-gray-800 mb-4">
+                <i class="fas fa-magic text-blue-600"></i> Efeitos Especiais
+            </h3>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div class="glow-effect p-6 rounded-lg text-center" style="background: var(--secondary-bg);">
+                    <i class="fas fa-star text-4xl mb-4" style="color: var(--accent-light);"></i>
+                    <h4 class="text-xl font-bold mb-2" style="color: var(--text-primary);">Glow Effect</h4>
+                    <p style="color: var(--text-secondary);">Efeito de brilho sutil</p>
+                </div>
+                
+                <div class="pulse-glow p-6 rounded-lg text-center" style="background: var(--secondary-bg);">
+                    <i class="fas fa-heart text-4xl mb-4" style="color: var(--accent-light);"></i>
+                    <h4 class="text-xl font-bold mb-2" style="color: var(--text-primary);">Pulse Glow</h4>
+                    <p style="color: var(--text-secondary);">Animação pulsante</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <div class="text-center py-8">
+            <p class="text-gray-600">
+                <i class="fas fa-paint-brush text-blue-600"></i>
+                <strong>KeepThumbnail v2.0</strong> - Tema Dark Azul Marinho Profissional
+            </p>
+            <p class="text-gray-500 text-sm mt-2">
+                Design moderno, elegante e profissional para gerenciamento de thumbnails
+            </p>
+        </div>
+    </div>
+
+    <script>
+        // Demo de notificação
+        setTimeout(() => {
+            const notification = document.createElement('div');
+            notification.className = 'notification info';
+            notification.innerHTML = '<i class="fas fa-palette mr-2"></i> Tema Dark aplicado com sucesso!';
+            document.body.appendChild(notification);
+            
+            setTimeout(() => {
+                notification.remove();
+            }, 3000);
+        }, 1000);
+    </script>
+</body>
+</html>
